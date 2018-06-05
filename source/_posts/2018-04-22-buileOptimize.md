@@ -3,11 +3,13 @@ title: 记一次webpack构建优化
 date: 2018-04-22 10:47:50
 categories: js
 tags:
-	- webpack
-	- 优化
+  - webpack
+  - 优化
 ---
 
 一次偶然的机会，我知道了webpack有很多可视化工具，可以帮助你分析应用的依赖图表，找出不好的地方，让你去优化他们。
+
+<!-- more --> 
 
 ## webpack Analyze
 
@@ -16,7 +18,6 @@ tags:
 将生成好的json文件上传至Analyze，你会看到如下图所示界面。这是你应用的构建概览。你可以在Modules，Chunks，Assets目录里看见更详细的报告，也可以在Hints目录里查看优化提示。
 
 {% asset_img 01.jpg Analyze Home %}
-
 
 
 ## 大量module被多个chunks依赖

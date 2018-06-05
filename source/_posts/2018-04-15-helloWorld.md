@@ -8,6 +8,8 @@ categories: 随笔
 
 但话又说回来了，博客是coder的脸面，没有的话又有点说不过去，只好另辟蹊径，找到了Hexo。
 
+<!-- more --> 
+
 ## 说说Hexo
 
 Hexo的使用体验是简单 + 愉快的，基本上跟着[官方教程](https://hexo.io/zh-cn/docs/index.html)敲一遍就能上手，书写方面采用的是MarkDown，学起来也很快。部署方面也很简单，将写好的文章传到服务器上就可以了（就你废话多）。这里我还参考了[知乎的一篇文章](https://zhuanlan.zhihu.com/p/26625249)。
