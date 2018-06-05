@@ -11,6 +11,7 @@ highlight-green = #99cc99
 highlight-aqua = #66cccc
 highlight-blue = #6699cc
 highlight-purple = #cc99cc
+code-font-size = font-size * .95
 
 $code-block
   background: highlight-background
@@ -21,7 +22,8 @@ $code-block
   border-width: 1px 0
   overflow: auto
   color: highlight-foreground
-  line-height: font-size * line-height
+  font-size: code-font-size
+  line-height: code-font-size * line-height
 
 $line-numbers
   color: #666
@@ -65,7 +67,7 @@ $line-numbers
       text-align: right
       padding-right: 20px
     .line
-      height: font-size * line-height
+      height: code-font-size * line-height
     .line.marked
       background: highlight-selection
   .gist
