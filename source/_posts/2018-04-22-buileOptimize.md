@@ -7,13 +7,13 @@ tags:
   - 优化
 ---
 
-一次偶然的机会，我知道了webpack有很多可视化工具，可以帮助你分析应用的依赖图表，找出不好的地方，让你去优化他们。
+一次偶然的机会，我知道了webpack有很多可视化工具，可以帮助你分析应用的依赖图表，找出不好的地方，让你去优化他们。我通过使用webpack的官方分析工具，优化了项目构建逻辑，使构建后的平均文件的size减少了50kb，部分文件的size减少了100kb。
 
 <!-- more --> 
 
 ## webpack Analyze
 
-我用的是webpack的官方分析工具[Analyze](https://webpack.github.io/analyse/)，使用它之前，你需要先生成一份**包含关于模块的统计数据的json文件**，你可以参照[这篇文档](https://doc.webpack-china.org/api/stats/#src/components/Sidebar/Sidebar.jsx)，如果你使用的是Node APi，那么你可能需要参考[这篇文档](https://doc.webpack-china.org/api/node/#stats-%E5%AF%B9%E8%B1%A1-stats-object-)。
+这是webpack的官方分析工具[Analyze](https://webpack.github.io/analyse/)，使用它之前，你需要先生成一份**包含关于模块的统计数据的json文件**，你可以参照[这篇文档](https://doc.webpack-china.org/api/stats/#src/components/Sidebar/Sidebar.jsx)，如果你使用的是Node APi，那么你可能需要参考[这篇文档](https://doc.webpack-china.org/api/node/#stats-%E5%AF%B9%E8%B1%A1-stats-object-)。
 
 将生成好的json文件上传至Analyze，你会看到如下图所示界面。这是你应用的构建概览。你可以在Modules，Chunks，Assets目录里看见更详细的报告，也可以在Hints目录里查看优化提示。
 
